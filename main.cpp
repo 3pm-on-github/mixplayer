@@ -30,8 +30,8 @@ int main(int argc, char *argv[]) {
     audioOutput->setVolume(0.8);
 
     DiscLabel *discLabel = new DiscLabel;
-    QPixmap discPixmap("disc.png");
-    discPixmap = discPixmap.scaled(150,150,Qt::KeepAspectRatio, Qt::SmoothTransformation);
+    QPixmap discPixmap(":/disc.png");
+    discPixmap = discPixmap.scaled(150, 150, Qt::KeepAspectRatio, Qt::SmoothTransformation);
     discLabel->setPixmap(discPixmap);
     layout->addWidget(discLabel, 0, Qt::AlignHCenter);
 
